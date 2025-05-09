@@ -1,3 +1,5 @@
+package practice;
+
 public class magicNo {
 
     static  int magicN (int n ){

@@ -1,3 +1,5 @@
+package practice;
+
 public class printPrimeOddFactor {
 
     static int factor(int n ){

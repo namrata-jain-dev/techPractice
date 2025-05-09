@@ -1,3 +1,5 @@
+package assignment;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -30,7 +32,7 @@ that are zero, as these represent out-of-stock items.
         }
     }
 
-    static void repeatSowingTotal(Scanner sc,int[] arr){
+    static void repeatShowingTotal(Scanner sc,int[] arr){
         String toggleShow;
         int sum = 0 ;
         for (int value : arr){
@@ -84,15 +86,12 @@ that are zero, as these represent out-of-stock items.
                     j--;
                 }
             }
-
-
-
         }
         int[] res = new int[arr.length-countOutOfStock-1];
 //        for(int i = 0 ; i < res.length ; i++){
 //            res[i] = arr[i];
 //        }
-        System.arraycopy(arr, 0, res, 0, res.length);
+        System.arraycopy(arr, 1, res, 1, res.length);
         return res;
     }
 
@@ -104,7 +103,7 @@ that are zero, as these represent out-of-stock items.
         int[] stockQuantity = new int[5];
         stockQuantity = takeUserInput(sc);
         showQuantities(stockQuantity);
-        repeatSowingTotal(sc,stockQuantity);
+        repeatShowingTotal(sc,stockQuantity);
         int res = countMoreThan100Stocks(stockQuantity);
         System.out.println("The no of items which are having more than 100 quantity are "+res);
         arrayListConversion(stockQuantity);

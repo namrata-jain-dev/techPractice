@@ -1,3 +1,5 @@
+package assignment;
+
 import java.util.Scanner;
 
 /// Problem Statement : Create a Bank Loan Eligibility System to
@@ -27,7 +29,7 @@ public class Assignnment2 {
         boolean ageCheck = false ;
         switch (loanType.toLowerCase()){
             case "home" :  {
-               if(age >= 25 && age <= 60 ) {
+               if(age >= 25 && age <= 60) {
                    if(income > 30000){
                        System.out.println("Congratulations you are eligible for Home Loan");
                    }else{
@@ -37,7 +39,7 @@ public class Assignnment2 {
                    if(income > 30000){
                        System.out.println("Sorry you are not eligible for Home Loan because of your Age");
                    }else {
-                       System.out.println("Sorry you are not eligible for Home Loan because of your Age and  Income both");
+                       System.out.println("Sorry you are not eligible for Home Loan because of your Age and Income both");
                    }
                }
                break;
@@ -53,7 +55,7 @@ public class Assignnment2 {
                     if(income > 25000){
                         System.out.println("Sorry you are not eligible for Car Loan because of your Age");
                     }else {
-                        System.out.println("Sorry you are not eligible for Car Loan because of your Age and  Income both");
+                        System.out.println("Sorry you are not eligible for Car Loan because of your Age and Income both");
                     }
                 }
                 break;
@@ -69,7 +71,7 @@ public class Assignnment2 {
                     if(income > 20000){
                         System.out.println("Sorry you are not eligible for Personal Loan because of your Age");
                     }else {
-                        System.out.println("Sorry you are not eligible for Personal Loan because of your Age and  Income both");
+                        System.out.println("Sorry you are not eligible for Personal Loan because of your Age and Income both");
                     }
                 }
                 break;

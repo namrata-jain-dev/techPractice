@@ -1,6 +1,5 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
+package practice;
+
 import java.util.HashMap;
 
 public class sortString {

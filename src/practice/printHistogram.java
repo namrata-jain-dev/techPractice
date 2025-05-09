@@ -1,3 +1,5 @@
+package practice;
+
 public class printHistogram {
     static void printhistogram(int[] arr){
         int ln = arr.length ;
