@@ -1,0 +1,13 @@
+fun main() is the entry point of kotlin class or file
+function is created using fun keyword
+variables are created using var & val keyword
+    where var can be reassigned
+    and val cant be reassigned
+
+Data Types
+Integer (Byte, Short, Int, Long )
+Floating point (Float, Double)
+Boolean (True,False)
+Character (Char, String)
+
+Operators + , - , * , /

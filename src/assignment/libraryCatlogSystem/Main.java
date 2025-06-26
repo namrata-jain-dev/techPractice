@@ -121,6 +121,7 @@ public class Main {
         System.out.println();
         for(int i = 0 ; i < books.size() ; i++){
             String pattern2 = "OS";
+//            if(titleList[i].compareToIgnoreCase()!=0){
             if(titleList[i].contains(pattern2)){
                 System.out.println("Yes the pattern OS is found in the title =>"+books.get(i).getTitle() );
             }
@@ -133,7 +134,7 @@ public class Main {
 
             LocalDateTime firstDate = books.get(i).getPublicationDate().atTime(LocalTime.now());
             LocalDateTime secondDate = LocalDateTime.now();
-            Duration.between(books.get(i).getPublicationDate().atTime(LocalTime.now()),LocalDate.now().atTime(LocalTime.now()));
+//            Duration.between(books.get(i).getPublicationDate().atTime(LocalTime.now()),LocalDate.now().atTime(LocalTime.now()));
             Duration duration = Duration.between(firstDate,secondDate); // between function must requires time
             System.out.println("Calculating through the DURATION class the difference between current date and publication date at index "+i+" => "+ duration.toDays()/365+" years");
         }
