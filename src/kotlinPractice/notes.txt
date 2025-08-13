@@ -1,3 +1,6 @@
+todo kt by cheesycode
+power bi data representation
+
 fun main() is the entry point of kotlin class or file
 function is created using fun keyword
 variables are created using var & val keyword
